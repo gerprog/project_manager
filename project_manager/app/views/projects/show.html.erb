@@ -1,10 +1,7 @@
+<header>
+  <p>Project</p>
+</header>
 
+<%= render @project %>
 
-<p>
-  <b>Title:</b>
-  <%= @project.title %>
-</p>
-
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<%= link_to raw("&larr; Back to Projects"), projects_path %>
